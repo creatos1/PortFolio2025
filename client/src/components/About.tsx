@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { experience, education, achievements } from "@/data/portfolio";
+import { AvatarImage } from "@radix-ui/react-avatar";
 import { Briefcase, GraduationCap, Award } from "lucide-react";
 
 export default function About() {
@@ -15,6 +16,8 @@ export default function About() {
             crear experiencias visuales atractivas y funcionales. Ganador del
             1er lugar en Hackathon Smart Security Aguascalientes 2023.
           </p>
+          <img src="/images/hack.png" alt="Ian Rodríguez" />
+
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">

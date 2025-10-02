@@ -58,7 +58,7 @@ export default function Hero() {
           data-testid="text-hero-description"
         >
           Más de 1 año de experiencia en agencia de marketing digital.
-          Especializado en diseño visual, Adobe Creative Suite y desarrollo web.
+          Especializado en diseño visual y desarrollo web.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4">

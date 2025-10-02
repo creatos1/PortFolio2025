@@ -3,7 +3,8 @@ export interface PortfolioProject {
   title: string;
   category: "Diseño Digital" | "Diseño Impreso" | "Branding" | "Redes Sociales";
   date: string;
-  image: string;
+  image?: string;  
+  video?: string; 
   description: string;
   tools: string[];
 }
@@ -11,127 +12,145 @@ export interface PortfolioProject {
 export const projects: PortfolioProject[] = [
   {
     id: 1,
-    title: "Campaña de Salud Digital",
+    title: "Flyers para publicidad de restaurante",
     category: "Diseño Digital",
-    date: "2024",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop",
-    description: "Diseño de campaña digital para servicios de salud, incluyendo banners web y contenido para redes sociales enfocado en promover servicios médicos preventivos.",
+    date: "2025",
+    image: "/images/flyer.jpg",
+    description: "Diseño de Flyer digital.",
     tools: ["Photoshop", "Illustrator"]
   },
   {
     id: 2,
-    title: "Logo Clínica Moderna",
-    category: "Branding",
-    date: "2024",
-    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&h=600&fit=crop",
-    description: "Identidad visual completa para clínica moderna, incluyendo logo principal, variaciones y manual de marca con paleta de colores profesional del sector salud.",
-    tools: ["Illustrator", "InDesign"]
+    title: "Etiquetas para botellas de agua",
+    category: "Diseño Digital",
+    date: "2025",
+    image: "/images/Agua.png",
+    description: "Diseño de etiqueta digital.",
+    tools: ["Photoshop", "Illustrator"]
   },
   {
     id: 3,
-    title: "Flyer Promocional Nutrición",
+    title: "Creación e impresión de empaques para insumos de mascotas",
     category: "Diseño Impreso",
-    date: "2024",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
-    description: "Flyer impreso para campaña de nutrición y bienestar, diseñado para distribución en centros de salud con información clara y visual atractiva.",
-    tools: ["Photoshop", "Illustrator"]
+    date: "2025",
+    image: "/images/blister.png",
+    description: "Diseño e impresión de empaques tipo blister para insumos de mascotas, con enfoque en durabilidad y atractivo visual para el punto de venta.",
+    tools: ["Photoshop", "Illustrator", "Atools"]
   },
   {
     id: 4,
-    title: "Banner Exterior Farmacia",
-    category: "Diseño Impreso",
-    date: "2024",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop",
-    description: "Banner de gran formato para fachada de farmacia, con diseño llamativo que comunica promociones y servicios disponibles las 24 horas.",
-    tools: ["Photoshop", "Illustrator"]
+    title: "Canal de Youtube",
+    category: "Redes Sociales",
+    date: "2025",
+    image: "/images/canal.png",
+    description: "Canal de youtube con 5 años de experiencia en creación de contenido audiovisual, edición de video y optimización para SEO en plataformas digitales.",
+    tools: ["Photoshop", "Illustrator", "Filmora", "After Effects"]
   },
   {
     id: 5,
-    title: "Tarjetas Médico Especialista",
-    category: "Branding",
-    date: "2025",
-    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop",
-    description: "Diseño de tarjetas de presentación elegantes para médico especialista, con acabado premium y tipografía profesional que transmite confianza.",
-    tools: ["Illustrator", "InDesign"]
-  },
-  {
-    id: 6,
-    title: "Contenido Instagram Wellness",
-    category: "Redes Sociales",
-    date: "2024",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
-    description: "Serie de posts para Instagram sobre bienestar y salud mental, con diseño cohesivo y paleta de colores relajante para engagement en redes sociales.",
-    tools: ["Photoshop", "Canva"]
-  },
-  {
-    id: 7,
-    title: "Viniles Consultorio Dental",
-    category: "Diseño Impreso",
-    date: "2024",
-    image: "https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800&h=600&fit=crop",
-    description: "Diseño de viniles decorativos para consultorio dental, combinando información educativa sobre higiene bucal con elementos visuales amigables.",
-    tools: ["Illustrator", "Photoshop"]
-  },
-  {
-    id: 8,
-    title: "Infografía Servicios Médicos",
+    title: "Diseño de lonas publicitarias",
     category: "Diseño Digital",
-    date: "2024",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-    description: "Infografía digital explicando servicios médicos especializados, con iconografía clara y flujo de información optimizado para comprensión rápida.",
-    tools: ["Illustrator", "Photoshop"]
-  },
-  {
-    id: 9,
-    title: "Lona Campaña Vacunación",
-    category: "Diseño Impreso",
-    date: "2024",
-    image: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=800&h=600&fit=crop",
-    description: "Lona de gran formato para campaña de vacunación comunitaria, diseño con alta visibilidad y mensaje claro para informar a la población.",
+    date: "2025",
+    image: "/images/carnitas.jpg",
+    description: "Creación y diseño de lonas publicitarias para restaurante de carnitas, enfocadas en atraer clientes mediante gráficos llamativos y mensajes claros.",
     tools: ["Photoshop", "Illustrator"]
   },
   {
-    id: 10,
-    title: "Identidad Visual Hospital",
-    category: "Branding",
+    id: 6,
+    title: "Creación de aaplicaciones nativas para aagilizar procesoss",
+    category: "Diseño Digital",
     date: "2025",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop",
-    description: "Sistema completo de identidad visual para hospital privado, incluyendo papelería, señalética y aplicaciones digitales con enfoque en profesionalismo.",
-    tools: ["Illustrator", "InDesign", "Photoshop"]
+    image: "/images/folios.png",
+    description: "Creacion de aplicaciones nativas para agilizar procesos internos en la empresa, mejorando la eficiencia y reduciendo errores operativos, tal como crear app para foliar y evitar hacerlo manual.",
+    tools: ["Python", "Visual Studio Code"]
+  },
+  {
+    id: 7,
+    title: "Creación de logos personales y empresariales",
+    category: "Diseño Digital",
+    date: "2025",
+    image: "/images/logo.png",
+    description: "Diseño de logotipos personalizados para individuos y empresas, enfocándose en la identidad de marca y la comunicación visual efectiva.",
+    tools: ["Photoshop", "Adoebe Illustrator"]
+  },
+  {
+    id: 8,
+    title: "Creación de diseños para imanes publicitarios en vinil impreso",
+    category: "Diseño Digital",
+    date: "2025",
+    image: "/images/kaaj.png",
+    description: "Creación de diseños atractivos para imanes publicitarios en vinil impreso, optimizados para alta visibilidad y durabilidad en diversas superficies.",
+    tools: ["Photoshop", "Adoebe Illustrator"]
+  },
+  {
+    id: 9,
+    title: "Creación de diseño para rotulación de vehículos",
+    category: "Diseño Digital",
+    date: "2025",
+    image: "/images/maxigrua.png",
+    description: " Diseño de rotulación para vehículos de empresa, asegurando que los gráficos sean llamativos y legibles desde la distancia, promoviendo la marca en movimiento.",
+    tools: ["Photoshop", "Adoebe Illustrator"]
   },
   {
     id: 11,
-    title: "Posts Facebook Salud Preventiva",
-    category: "Redes Sociales",
-    date: "2024",
-    image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&h=600&fit=crop",
-    description: "Contenido visual para campaña en Facebook sobre medicina preventiva, con diseño educativo que fomenta la participación y compartir información.",
-    tools: ["Photoshop", "Canva"]
+    title: "Creación de menús digitales e impresos",
+    category: "Diseño Digital",
+    date: "2025",
+    image: "/images/menu.png",
+    description: "Creación de menús tanto digitales como impresos para restaurantes, con un diseño atractivo y funcional que mejora la experiencia del cliente.",
+    tools: ["Photoshop", "Adoebe Illustrator"]
   },
   {
     id: 12,
-    title: "Banner Web Telemedicina",
+    title: "Creación de stickers con suaje personalizado",
     category: "Diseño Digital",
     date: "2025",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
-    description: "Banners responsivos para sitio web de telemedicina, comunicando facilidad de uso y accesibilidad de servicios médicos en línea.",
-    tools: ["Photoshop", "Illustrator", "Adobe Animate"]
-  }
+    image: "/images/suaje.png",
+    description: "Creación de stickers personalizados con suaje especial, ideales para promociones y branding, utilizando materiales de alta calidad para una mejor presentación.",
+    tools: ["Photoshop", "Adoebe Illustrator"]
+  },
+  {
+    id: 13,
+    title: "Desarrollo de paginas web para pequeñas y medianas empresas",
+    category: "Diseño Digital",
+    date: "2025",
+    image: "/images/web.png",
+    description: "Es un ejemplo de una página web desarrollada para una pequeña empresa, incluyendo diseño responsivo y moderno.",
+    tools: ["Visual Studio", "Photoshop", "Illustrator", "HTML", "CSS", "JavaScript", "Angular"]
+  },
+  {
+    id: 14,
+    title: "Producción de lona, vinil impreso y corte de vinil",
+    category: "Diseño Impreso",
+    date: "2025",
+    image: "/images/vinil.jpg", 
+    description: "Producción e impresión de lonas y vinil impreso, así como corte de vinil para diversas aplicaciones publicitarias, garantizando alta calidad y durabilidad.",
+    tools: ["Photoshop", "Illustrator"]
+  },
+    {
+    id: 15,
+    title: "Corte de etiquetas con plotter de corte",
+    category: "Diseño Impreso",
+    date: "2025",
+    image: "/images/plottercorte.png", 
+    description: "Producción y corte de etiquetas utilizando plotter de corte, ideal para personalización y branding en productos diversos.",
+    tools: ["Photoshop", "Illustrator"]
+  },
 ];
 
 export const categories = ["Todos", "Diseño Digital", "Diseño Impreso", "Branding", "Redes Sociales"] as const;
 
 export const skills = [
-  { name: "Adobe Photoshop", level: "Avanzado", icon: "image" },
-  { name: "Adobe Illustrator", level: "Avanzado", icon: "pen-tool" },
-  { name: "Adobe InDesign", level: "Avanzado", icon: "file-text" },
-  { name: "Canva", level: "Avanzado", icon: "palette" },
-  { name: "Adobe Animate", level: "Intermedio", icon: "play" },
-  { name: "Filmora", level: "Avanzado", icon: "video" },
-  { name: "After Effects", level: "Intermedio", icon: "film" },
-  { name: "HTML/CSS", level: "Avanzado", icon: "code" },
-  { name: "JavaScript", level: "Intermedio", icon: "code-2" },
-  { name: "Angular", level: "Intermedio", icon: "layers" }
+  { name: "Adobe Photoshop", level: "", icon: "image" },
+  { name: "Adobe Illustrator", level: "", icon: "pen-tool" },
+
+  { name: "Canva", level: "", icon: "palette" },
+  { name: "Adobe Animate", level: "", icon: "play" },
+  { name: "Filmora", level: "", icon: "video" },
+  { name: "After Effects", level: "", icon: "film" },
+  { name: "HTML/CSS", level: "", icon: "code" },
+  { name: "JavaScript", level: "", icon: "code-2" },
+  { name: "Angular", level: "", icon: "layers" }
 ];
 
 export const experience = [

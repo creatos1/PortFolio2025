@@ -32,7 +32,7 @@ export default function Contact() {
             </h3>
             <div className="space-y-4">
               <a
-                href="mailto:ianrodsaan.2004@gmail.com"
+                href="mailto:ianrodsan.2004@gmail.com"
                 className="flex items-center gap-4 hover-elevate active-elevate-2 p-3 rounded-md"
                 data-testid="link-email"
               >
@@ -80,27 +80,14 @@ export default function Contact() {
                   data-testid="button-github"
                 >
                   <a
-                    href="https://github.com"
+                    href="https://github.com/creatos1/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <SiGithub className="h-5 w-5" />
                   </a>
                 </Button>
-                <Button
-                  size="icon"
-                  variant="outline"
-                  asChild
-                  data-testid="button-linkedin"
-                >
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <SiLinkedin className="h-5 w-5" />
-                  </a>
-                </Button>
+                
                 <Button
                   size="icon"
                   variant="outline"
@@ -108,7 +95,7 @@ export default function Contact() {
                   data-testid="button-youtube"
                 >
                   <a
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/@AxlGamester/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -122,7 +109,7 @@ export default function Contact() {
                   data-testid="button-tiktok"
                 >
                   <a
-                    href="https://tiktok.com"
+                    href="https://www.tiktok.com/@axlgamester"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
