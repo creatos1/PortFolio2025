@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Download, ArrowDown } from "lucide-react";
 
 export default function Hero() {
@@ -34,6 +35,12 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
+        <div className="flex justify-center mb-8">
+          <Avatar className="h-32 w-32 md:h-40 md:w-40 border-4 border-white/20">
+            <AvatarImage src="/images/profile.jpg" alt="Ian Rodríguez" />
+            <AvatarFallback className="text-4xl font-bold">IR</AvatarFallback>
+          </Avatar>
+        </div>
         <h1
           className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
           data-testid="text-hero-title"
