@@ -35,10 +35,10 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
-        <div className="flex justify-center mb-8">
-          <Avatar className="h-32 w-32 md:h-40 md:w-40 border-4 border-white/20">
+        <div className="flex justify-center mb-6">
+          <Avatar className="h-32 w-32 md:h-40 md:w-40 border-4 border-white/20 shadow-2xl">
             <AvatarImage src="/images/profile.jpg" alt="Ian Rodríguez" />
-            <AvatarFallback className="text-4xl font-bold">IR</AvatarFallback>
+            <AvatarFallback className="text-4xl font-bold bg-gradient-to-br from-purple-600 to-pink-600">IR</AvatarFallback>
           </Avatar>
         </div>
         <h1
