@@ -12,7 +12,7 @@ export default function Hero() {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/attached_assets/CV_Ian_Rodriguez 2025_1759422513347.pdf';
+    link.href = '/images/CV_Ian_Rodriguez 2025_1759422513347.pdf';
     link.download = 'CV_Ian_Rodriguez_2025.pdf';
     document.body.appendChild(link);
     link.click();
